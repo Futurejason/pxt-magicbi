@@ -65,7 +65,7 @@ declare namespace IrRemote {
             case 0xbf40: irdata = 21; break;
             case 0xbc43: irdata = 99; break;
             case 0xf807: irdata = 24; break;
-            case 0xea15: irdata = 00; break;
+            case 0xea15: irdata = 55; break;
             case 0xf609: irdata = 22; break;
             case 0xe916: irdata = 0; break;
             case 0xe619: irdata = 23; break;
