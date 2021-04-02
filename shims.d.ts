@@ -80,7 +80,7 @@ declare namespace IrRemote {
             case 0xad52: irdata = 8; break;
             case 0xb54a: irdata = 9; break;
             default:
-                irdata = '-1';
+                irdata = -1;
         }
         return irdata;
     }
