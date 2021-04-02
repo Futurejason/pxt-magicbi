@@ -58,17 +58,17 @@ declare namespace IrRemote {
     function valuotokeyConversion(): number {
         let irdata: number;
         switch (irCode()) {
-            case 0xba45: irdata = 01; break;
-            case 0xb946: irdata = 02; break;
-            case 0xb847: irdata = 03; break;
-            case 0xbb44: irdata = 04; break;
-            case 0xbf40: irdata = 11; break;
+            case 0xba45: irdata = 11; break;
+            case 0xb946: irdata = 12; break;
+            case 0xb847: irdata = 13; break;
+            case 0xbb44: irdata = 14; break;
+            case 0xbf40: irdata = 21; break;
             case 0xbc43: irdata = 99; break;
-            case 0xf807: irdata = 14; break;
+            case 0xf807: irdata = 24; break;
             case 0xea15: irdata = 00; break;
-            case 0xf609: irdata = 12; break;
+            case 0xf609: irdata = 22; break;
             case 0xe916: irdata = 0; break;
-            case 0xe619: irdata = 13; break;
+            case 0xe619: irdata = 23; break;
             case 0xf20d: irdata = 66; break;
             case 0xf30c: irdata = 1; break;
             case 0xe718: irdata = 2; break;
