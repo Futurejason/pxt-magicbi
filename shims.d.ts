@@ -40,7 +40,7 @@ declare namespace IrRemote {
     //% weight=5
     //% group="micro:bit(v2)"
     //% blockId=IR_readv2 block="read IR key value"
-    export function IR_readV2(): number {
+    export function IR_readV2(): string {
         return valuotokeyConversion();
     }
 
