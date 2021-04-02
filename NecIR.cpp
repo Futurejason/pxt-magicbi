@@ -10,10 +10,10 @@ int data;
 int logic_value(){//判断逻辑值"0"和"1"子函数
     uint32_t lasttime = system_timer_current_time_us();
     uint32_t nowtime;
-    while(!uBit.io.P16.getDigitalValue());//低等待
+    while(!uBit.io.P1.getDigitalValue());//低等待
     nowtime = system_timer_current_time_us();
     if((nowtime - lasttime) > 400 && (nowtime - lasttime) < 700){//低电平560us
-        while(uBit.io.P16.getDigitalValue());//是高就等待
+        while(uBit.io.P1.getDigitalValue());//是高就等待
         lasttime = system_timer_current_time_us();
         if((lasttime - nowtime)>400 && (lasttime - nowtime) < 700){//接着高电平560us
             return 0;
