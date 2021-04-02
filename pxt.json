@@ -19,7 +19,7 @@
         "TransmitterIR.cpp",
         "TransmitterIR.h",
         "_locales/zh/magicbit-strings.json",
-        "NeclR.cpp"
+        "NecIR.cpp"
     ],
     "testFiles": [
         "test.ts"
