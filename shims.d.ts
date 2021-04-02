@@ -2,30 +2,34 @@
 
 
 
-// //% color=50 weight=19 icon="\uf1eb"
-// //% block="IrRemote"
-// declare namespace IrRemote {
+//% color=50 weight=19 icon="\uf1eb"
+//% block="IrRemote"
+declare namespace IrRemote {
 
-//     /**
-//      * button pushed.
-//      */
-//     //% blockId=onPressEvent
-//     //% block="on |%btn| button pressed" shim=IrRemote::onPressEvent
-//     function onPressEvent(btn: remotebutton, body: () => void): void;
+    /**
+     * button pushed.
+     */
+    //% blockId=onPressEvent
+    //% block="on |%btn| button pressed" shim=IrRemote::onPressEvent
+    function onPressEvent(btn: remotebutton, body: () => void): void;
 
-//     /**
-//      * initialises local variablesssss
-//      */
-//     //% blockId=IrRemote_init
-//     //% block="connect ir receiver to %pin" shim=IrRemote::IrRemote_init
-//     function IrRemote_init(pin: Pins): void;
+    /**
+     * initialises local variablesssss
+     */
+    //% blockId=IrRemote_init
+    //% block="connect ir receiver to %pin" shim=IrRemote::IrRemote_init
+    function IrRemote_init(pin: Pins): void;
 
-// }
-
+}
 
 //% color=50 weight=80
 //% icon="\uf1eb"
 declare namespace maqueenIRV2 {
+
+}
+//% weight=10 color=#008B00 icon="\uf136" block="Maqueen"
+//% groups=['micro:bit(v2)']
+declare namespace maqueen {
     export class Packeta {
         public mye: string;
         public myparam: number;
@@ -39,18 +43,19 @@ declare namespace maqueenIRV2 {
     */
 
     //% advanced=true shim=maqueenIRV2::irCode
-    function irCode(): number {
+    //test1
+    export function irCode(): number {
         return 0;
     }
 
-    //% weight=5
+
     //% group="micro:bit(v2)"
     //% blockId=IR_readv2 block="read IR key value"
     export function IR_readV2(): number {
         return valuotokeyConversion();
     }
 
-    //% weight=2
+
     //% group="micro:bit(v2)"
     //% blockId=IR_callbackUserv2 block="on IR received"
     //% draggableParameters
@@ -60,8 +65,8 @@ declare namespace maqueenIRV2 {
             cb(irstate)
         })
     }
-
-    function valuotokeyConversion(): number {
+    //test2
+    export function valuotokeyConversion(): number {
         let irdata: number;
         switch (irCode()) {
             case 0xba45: irdata = 11; break;
