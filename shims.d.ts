@@ -3,21 +3,21 @@
 
 
 //% color=50 weight=19 icon="\uf1eb"
-//% block="IrRemote"
-declare namespace IrRemote {
+//% block="magicbit"
+declare namespace magicbit {
 
     /**
      * button pushed.
      */
     //% blockId=onPressEvent
-    //% block="on |%btn| button pressed" shim=IrRemote::onPressEvent
+    //% block="on |%btn| button pressed" shim=magicbit::onPressEvent
     function onPressEvent(btn: remotebutton, body: () => void): void;
 
     /**
      * initialises local variablesssss
      */
     //% blockId=IrRemote_init
-    //% block="connect ir receiver to %pin" shim=IrRemote::IrRemote_init
+    //% block="connect ir receiver to %pin" shim=magicbit::IrRemote_init
     function IrRemote_init(pin: Pins): void;
 
 }

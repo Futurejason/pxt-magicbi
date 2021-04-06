@@ -449,8 +449,6 @@ export function Setting_the_on_board_lights(offset: Offset,rgb: RgbColors, effec
     
     
     
-    
-    
 export class Packeta {
     public mye: string;
     public myparam: number;
