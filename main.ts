@@ -457,7 +457,7 @@ export class Packeta {
 }
 
 
-let irstate:number;
+let irstate:string;
 let state:number;
  /**
  * Read IR sensor value V2.
@@ -506,7 +506,7 @@ export function IR_readV2(): string {
 //% group="micro:bit(v2)"
 //% blockId=IR_callbackUserv2 block="on IR received"
 //% draggableParameters
-export function IR_callbackUserV2(cb: (message: number) => void) {
+export function IR_callbackUserV2(cb: (message: string) => void) {
     state = 1;
     control.onEvent(11, 22, function() {
         cb(irstate)
@@ -545,8 +545,8 @@ function valuotokeyConversion(): number {
 
 basic.forever(() => {
     if(state == 1){
-        irstate = valuotokeyConversion();
-        if(irstate != -1){
+        irstate = IR_readV2();
+        if(irstate != '-1'){
             control.raiseEvent(11, 22)
         }
     }
