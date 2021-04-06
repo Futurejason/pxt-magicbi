@@ -521,9 +521,8 @@ export function Setting_the_on_board_lights(offset: Offset,rgb: RgbColors, effec
     /**
      * button pushed.
      */
-    //% blockId=ir_received_left_event
+    //% blockId=onPressEvent
     //% block="on |%btn| button pressed" shim=IrRemote::onPressEvent group="micro:bit(v1)"
-    //% subcategory="Rover_遥控器"
     export function OnPressEvent(btn: RemoteButton, body: () => void): void {
         return;
     }
@@ -532,9 +531,8 @@ export function Setting_the_on_board_lights(offset: Offset,rgb: RgbColors, effec
      * initialises local variablesssss
      *  @param pin describe parameter here, eg: IrPins.P5  
      */
-    //% blockId=ir_init 
+    //% blockId=IrRemote_init 
     //% block="connect ir receiver to %pin" shim=IrRemote::IrRemote_init group="micro:bit(v1)"
-    //% subcategory="Rover_遥控器"
     export function Init(pin: IrPins): void {
         return;
     }
