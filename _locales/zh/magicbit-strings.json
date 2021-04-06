@@ -69,5 +69,5 @@
     "IrRemote.Voltage.Low|block":"低",
     "IrRemote.ltEvent|block":"当|%value巡线传感器|%vi",
     "magicbit.IR_callbackUserV2|block": "当接收到红外时运行",
-    "magicbit.IR_readV2|block": "红外的值"
+    "magicbit.IR_readV2|block": "红外接收的值"
 }
