@@ -450,33 +450,14 @@ export function Setting_the_on_board_lights(offset: Offset,rgb: RgbColors, effec
     
     
     
-// microbit  v1
-
-    /**
-     * button pushed.
-     */
-    //% blockId=onPressEvent
-    //% group="micro:bit(v1)"
-    //% block="on |%btn| button pressed" shim=IrRemote::onPressEvent
-    function onPressEvent(btn: remotebutton, body: () => void): void;
-
-    /**
-     * initialises local variablesssss
-     */
-    //% blockId=IrRemote_init
-    //% group="micro:bit(v2)"
-    //% block="connect ir receiver to %pin" shim=IrRemote::IrRemote_init
-    function IrRemote_init(pin: Pins): void;
     
-    
-// microbit  v2
 export class Packeta {
     public mye: string;
     public myparam: number;
 }
 
 
-let irstate:string;
+let irstate:number;
 let state:number;
  /**
  * Read IR sensor value V2.
@@ -525,7 +506,7 @@ export function IR_readV2(): string {
 //% group="micro:bit(v2)"
 //% blockId=IR_callbackUserv2 block="on IR received"
 //% draggableParameters
-export function IR_callbackUserV2(cb: (message: string) => void) {
+export function IR_callbackUserV2(cb: (message: number) => void) {
     state = 1;
     control.onEvent(11, 22, function() {
         cb(irstate)
@@ -564,8 +545,8 @@ function valuotokeyConversion(): number {
 
 basic.forever(() => {
     if(state == 1){
-        irstate = IR_readV2();
-        if(irstate != '-1'){
+        irstate = valuotokeyConversion();
+        if(irstate != -1){
             control.raiseEvent(11, 22)
         }
     }
