@@ -450,7 +450,26 @@ export function Setting_the_on_board_lights(offset: Offset,rgb: RgbColors, effec
     
     
     
+// microbit  v1
+
+    /**
+     * button pushed.
+     */
+    //% blockId=onPressEvent
+    //% group="micro:bit(v1)"
+    //% block="on |%btn| button pressed" shim=IrRemote::onPressEvent
+    function onPressEvent(btn: remotebutton, body: () => void): void;
+
+    /**
+     * initialises local variablesssss
+     */
+    //% blockId=IrRemote_init
+    //% group="micro:bit(v1)"
+    //% block="connect ir receiver to %pin" shim=IrRemote::IrRemote_init
+    function IrRemote_init(pin: Pins): void;
     
+    
+// microbit  v2
 export class Packeta {
     public mye: string;
     public myparam: number;
