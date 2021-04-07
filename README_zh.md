@@ -34,7 +34,7 @@ micro:bit多功能电机驱动扩展板   [深圳市易创空间科技有限公�
 ![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/rgb_more_block_zh.png)
 
 ### 红外接收编程图形块
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/ir_block_zh.png)
+![image](IR.png)
 
 ## 开源许可
 MIT

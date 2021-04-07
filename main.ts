@@ -503,7 +503,6 @@ export function motorbit_rus04(index: RgbUltrasonics, rgb: RgbColors, effect: Co
     
 //% blockId=Ultrasonic_reading_distance block="On-board Ultrasonic reading distance"
 //% weight=77
-
 export function Ultrasonic_reading_distance(): number {
     return sensors.Ultrasonic(DigitalPin.P2);
 }

@@ -33,7 +33,7 @@ add block link  https://github.com/microsoft/pxt-neopixel
 ![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/rgb_more_block.png)
 
 ### ir blocks
-![image](https://github.com/emakefun/emakefun-docs/raw/master/docs/micro_bit/magic_bit/ir_block.png)
+![image](IR.png)
 
 ## License
 MIT
