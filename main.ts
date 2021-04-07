@@ -533,7 +533,7 @@ export function Setting_the_on_board_lights(offset: Offset,rgb: RgbColors, effec
      */
     //% blockId=IrRemote_init 
     //% block="connect ir receiver to %pin" shim=IrRemote::IrRemote_init group="micro:bit(v1)"
-    export function Init(pin: IrPins): void {
+    export function IrRemote_init(pin: IrPins): void {
         return;
     }
     
