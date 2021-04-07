@@ -5,12 +5,12 @@
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "Sensorbit": "github:emakefun/pxt-sensorbit"
+        "Sensorbit": "github:emakefun/pxt-sensorbit",
+        "MSP":"github:marsscholar/MSP-Rover.git"
     },
     "files": [
         "README.md",
         "main.ts",
-        "shims.d.ts",
         "enums.d.ts",
         "ir.cpp",
         "ReceiverIR.cpp",
