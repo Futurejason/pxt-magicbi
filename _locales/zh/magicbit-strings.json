@@ -33,7 +33,7 @@
     "magicbit.rgb|block": "板载RGB",
     "IrRemote|block": "红外",
     "magicbit.IrRemote_init|block": "红外遥控器初始化引脚|%pin",
-    "magicbit.onPressEvent|block": "当红外遥控器按键|%btn|按下",
+    "magicbit.OnPressEvent|block": "当红外遥控器按键|%btn|按下",
     "Offset.ONE|block": "第一个灯",
     "Offset.TWO|block": "第二个灯",
     "Offset.THREE|block": "第三个灯",
