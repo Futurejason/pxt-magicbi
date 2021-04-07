@@ -5,8 +5,7 @@
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "Sensorbit": "github:emakefun/pxt-sensorbit",
-        "MSP":"github:marsscholar/MSP-Rover.git"
+        "Sensorbit": "github:emakefun/pxt-sensorbit"
     },
     "files": [
         "README.md",
