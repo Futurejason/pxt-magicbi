@@ -16,7 +16,9 @@ enum Offset {
     FOUR = 3
 }
 
-// enum  IrPins {
+
+// enum  IrPins{
+
 //     P0=  3,
 //     P1=  2,
 //     P2=  1,
